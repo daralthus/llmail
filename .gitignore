@@ -1,0 +1,11 @@
+__pycache__
+
+.env
+notes.md
+
+# WIP
+api
+models
+scripts
+ui
+dist
