@@ -4,14 +4,14 @@
 
 A bunch of experiments for running local LLM-s to label incoming emails.
 
-## Setup
+## Setup
 
 1. `conda create -n llmail python=3.11`
 2. `pip install -r requirements.txt`
 3. [Create an app password for your gmail account](https://support.google.com/mail/answer/185833?hl=en)
 4. `cp .env.exammple .env`
 
-## Run
+## Run
 
 You can try work in progress notebooks in the [`experiments`]('./llmail/experiments') folder.
 
