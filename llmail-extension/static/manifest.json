@@ -1,0 +1,29 @@
+{
+  "name": "llmail",
+  "description": "Open LLM-s for Gmail",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    { "resources": ["icon.png"], "matches": ["https://mail.google.com/*"] }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["scripting", "identity", "storage"],
+  "host_permissions": ["https://mail.google.com/"],
+  "manifest_version": 3
+}

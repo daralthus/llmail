@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>llmail</title>
+    <style>
+      button {
+        padding: 10px;
+        background-color: #3c79f8;
+        display: inline-block;
+      }
+    </style>
+    <script type="text/javascript" src="page.js"></script>
+  </head>
+  <body>
+    <button>Authorize a Gmail account</button>
+    <p>Your authorized emails:</p>
+    <div id="list"></div>
+    <form id="urlForm">
+      <label for="url">Local or remote LLM url:</label>
+      <input type="text" id="apiURL" name="url" />
+      <br />
+      <label for="url">API key:</label>
+      <input type="text" id="apiKey" name="apikey" />
+    </form>
+  </body>
+</html>
